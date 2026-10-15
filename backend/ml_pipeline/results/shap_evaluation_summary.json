@@ -1,0 +1,217 @@
+{
+  "dataset_rows": 120,
+  "features_evaluated": 14,
+  "mean_absolute_shap": {
+    "rainfall_mm": 5.9612,
+    "elevation_mean": 3.7935,
+    "slope_mean": 0.6221,
+    "population_density": 0.4259,
+    "drainage_density_km": 0.2884,
+    "river_density_km": 1.3128,
+    "road_density": 0.1067,
+    "building_density": 1.0657,
+    "green_ratio": 0.2908,
+    "water_ratio": 0.0755,
+    "facility_density": 0.2047,
+    "impervious_ratio": 1.0797,
+    "basin_depression_index": 0.5581,
+    "effective_drainage_capacity": 1.6833
+  },
+  "case_studies": [
+    {
+      "district_id": "gedebage",
+      "district_name": "Gedebage",
+      "predicted_risk_score": 41.0,
+      "top_drivers": [
+        {
+          "feature": "rainfall_mm",
+          "display_name": "Rainfall intensity",
+          "shap_value": -12.195820808410645,
+          "abs_val": 12.195820808410645,
+          "val": 0.0,
+          "unit": "mm / 24h"
+        },
+        {
+          "feature": "elevation_mean",
+          "display_name": "Elevation",
+          "shap_value": 4.06580114364624,
+          "abs_val": 4.06580114364624,
+          "val": 667.0,
+          "unit": "m"
+        },
+        {
+          "feature": "effective_drainage_capacity",
+          "display_name": "Effective drainage capacity",
+          "shap_value": 3.375332832336426,
+          "abs_val": 3.375332832336426,
+          "val": 0.0,
+          "unit": "km / km\u00b2"
+        },
+        {
+          "feature": "population_density",
+          "display_name": "Population density",
+          "shap_value": -1.658496379852295,
+          "abs_val": 1.658496379852295,
+          "val": 6500.0,
+          "unit": "k / km\u00b2"
+        }
+      ]
+    },
+    {
+      "district_id": "coblong",
+      "district_name": "Coblong",
+      "predicted_risk_score": 33.0,
+      "top_drivers": [
+        {
+          "feature": "rainfall_mm",
+          "display_name": "Rainfall intensity",
+          "shap_value": -10.196600914001465,
+          "abs_val": 10.196600914001465,
+          "val": 0.0,
+          "unit": "mm / 24h"
+        },
+        {
+          "feature": "elevation_mean",
+          "display_name": "Elevation",
+          "shap_value": -7.171303749084473,
+          "abs_val": 7.171303749084473,
+          "val": 787.2,
+          "unit": "m"
+        },
+        {
+          "feature": "effective_drainage_capacity",
+          "display_name": "Effective drainage capacity",
+          "shap_value": 2.709378480911255,
+          "abs_val": 2.709378480911255,
+          "val": 0.0,
+          "unit": "km / km\u00b2"
+        },
+        {
+          "feature": "impervious_ratio",
+          "display_name": "Impervious surface ratio",
+          "shap_value": -1.284172773361206,
+          "abs_val": 1.284172773361206,
+          "val": 0.332,
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "district_id": "babakan-ciparay",
+      "district_name": "Babakan-Ciparay",
+      "predicted_risk_score": 51.5,
+      "top_drivers": [
+        {
+          "feature": "rainfall_mm",
+          "display_name": "Rainfall intensity",
+          "shap_value": -11.476325035095215,
+          "abs_val": 11.476325035095215,
+          "val": 0.0,
+          "unit": "mm / 24h"
+        },
+        {
+          "feature": "elevation_mean",
+          "display_name": "Elevation",
+          "shap_value": 2.9419193267822266,
+          "abs_val": 2.9419193267822266,
+          "val": 693.2,
+          "unit": "m"
+        },
+        {
+          "feature": "effective_drainage_capacity",
+          "display_name": "Effective drainage capacity",
+          "shap_value": 2.1764614582061768,
+          "abs_val": 2.1764614582061768,
+          "val": 0.0,
+          "unit": "km / km\u00b2"
+        },
+        {
+          "feature": "river_density_km",
+          "display_name": "River network density",
+          "shap_value": 1.972373366355896,
+          "abs_val": 1.972373366355896,
+          "val": 1.331,
+          "unit": "km / km\u00b2"
+        }
+      ]
+    },
+    {
+      "district_id": "cidadap",
+      "district_name": "Cidadap",
+      "predicted_risk_score": 18.8,
+      "top_drivers": [
+        {
+          "feature": "elevation_mean",
+          "display_name": "Elevation",
+          "shap_value": -13.043007850646973,
+          "abs_val": 13.043007850646973,
+          "val": 898.0,
+          "unit": "m"
+        },
+        {
+          "feature": "rainfall_mm",
+          "display_name": "Rainfall intensity",
+          "shap_value": -8.877493858337402,
+          "abs_val": 8.877493858337402,
+          "val": 0.0,
+          "unit": "mm / 24h"
+        },
+        {
+          "feature": "building_density",
+          "display_name": "Building density",
+          "shap_value": -3.1796047687530518,
+          "abs_val": 3.1796047687530518,
+          "val": 98.64,
+          "unit": "unit / km\u00b2"
+        },
+        {
+          "feature": "effective_drainage_capacity",
+          "display_name": "Effective drainage capacity",
+          "shap_value": 2.320399761199951,
+          "abs_val": 2.320399761199951,
+          "val": 0.0,
+          "unit": "km / km\u00b2"
+        }
+      ]
+    },
+    {
+      "district_id": "arcamanik",
+      "district_name": "Arcamanik",
+      "predicted_risk_score": 49.5,
+      "top_drivers": [
+        {
+          "feature": "rainfall_mm",
+          "display_name": "Rainfall intensity",
+          "shap_value": -12.889483451843262,
+          "abs_val": 12.889483451843262,
+          "val": 0.0,
+          "unit": "mm / 24h"
+        },
+        {
+          "feature": "elevation_mean",
+          "display_name": "Elevation",
+          "shap_value": 3.957584857940674,
+          "abs_val": 3.957584857940674,
+          "val": 673.6,
+          "unit": "m"
+        },
+        {
+          "feature": "river_density_km",
+          "display_name": "River network density",
+          "shap_value": 2.4844932556152344,
+          "abs_val": 2.4844932556152344,
+          "val": 1.917,
+          "unit": "km / km\u00b2"
+        },
+        {
+          "feature": "effective_drainage_capacity",
+          "display_name": "Effective drainage capacity",
+          "shap_value": 2.2652618885040283,
+          "abs_val": 2.2652618885040283,
+          "val": 0.0,
+          "unit": "km / km\u00b2"
+        }
+      ]
+    }
+  ]
+}

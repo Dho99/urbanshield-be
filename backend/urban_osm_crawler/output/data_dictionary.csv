@@ -1,0 +1,28 @@
+feature_name,source,description,unit
+district,administrative_boundary,District/kecamatan name (aggregation grain — one row = one district),string
+river_count,waterway=river/stream/canal,Number of river/stream/canal segments intersecting district,count
+river_length_meter,waterway=river/stream/canal,Total length of river/stream/canal segments per district,meter
+drainage_count,waterway=drain/ditch/culvert,Number of drain/ditch/culvert segments per district,count
+drainage_length_meter,waterway=drain/ditch/culvert,Total length of drainage segments per district,meter
+water_density,"derived: (river_length + drainage_length) / district_area",Hydrological density — total waterway length per district area,ratio (m/m²)
+road_count,highway=*,Total number of road segments per district,count
+road_length_meter,highway=*,Total road length per district,meter
+road_density,"derived: road_length_km / area_km²",Road density — road length per square kilometer,km/km²
+primary_road_length,highway=primary,Total length of primary roads per district,meter
+secondary_road_length,highway=secondary,Total length of secondary roads per district,meter
+hospital_count,amenity=hospital,Number of hospitals per district,count
+clinic_count,amenity=clinic,Number of clinics per district,count
+school_count,amenity=school,Number of schools per district,count
+university_count,amenity=university,Number of universities per district,count
+government_count,amenity=government,Number of government facilities per district,count
+public_facility_count,"derived: sum(hospital+clinic+school+university+government)",Total critical facilities per district,count
+facility_density,"derived: public_facility_count / area_km²",Facility density — facilities per square kilometer,count/km²
+building_count,building=*,Total number of buildings per district,count
+residential_count,building=residential,Number of residential buildings per district,count
+commercial_count,building=commercial,Number of commercial buildings per district,count
+building_density,"derived: building_count / area_km²",Building density — buildings per square kilometer,count/km²
+building_area_m2,building=* (polygon),Total building footprint area per district (where polygon geometry available),m²
+green_area_m2,"natural=wood/wetland + landuse=forest/grass/farmland (polygon)",Total green/infiltration area per district,m²
+green_ratio,"derived: green_area_m2 / district_area_m2",Green area ratio — proportion of district that is green cover,ratio (0-1)
+water_area_m2,natural=water (polygon),Total water body area per district,m²
+water_ratio,"derived: water_area_m2 / district_area_m2",Water body ratio — proportion of district covered by water,ratio (0-1)

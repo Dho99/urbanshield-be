@@ -1,0 +1,29 @@
+{
+  "dataset_name": "UrbanShield AI - Bandung Urban Flood Training Dataset",
+  "total_records": 120,
+  "total_districts": 30,
+  "scenarios": [
+    "current",
+    "heavy_rain_24h",
+    "heavy_rain_72h",
+    "drainage_failure"
+  ],
+  "feature_columns": [
+    "rainfall_mm",
+    "elevation_mean",
+    "slope_mean",
+    "population_density",
+    "drainage_density_km",
+    "river_density_km",
+    "road_density",
+    "building_density",
+    "green_ratio",
+    "water_ratio",
+    "facility_density",
+    "impervious_ratio",
+    "basin_depression_index",
+    "effective_drainage_capacity"
+  ],
+  "target_column": "risk_score",
+  "classification_target": "risk_level"
+}

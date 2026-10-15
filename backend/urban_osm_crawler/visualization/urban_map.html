@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fd48dc79befacf4abd69e1044a16896f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fd48dc79befacf4abd69e1044a16896f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fd48dc79befacf4abd69e1044a16896f = L.map(
+                "map_fd48dc79befacf4abd69e1044a16896f",
+                {
+                    center: [-6.914744, 107.60981],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_90c09c2a5ae145b25e1eeef02fd73028 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_90c09c2a5ae145b25e1eeef02fd73028.addTo(map_fd48dc79befacf4abd69e1044a16896f);
+        
+    
+            var feature_group_ca55211a1893f481411b35185620e3d3 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_175ca7d1518c054cb6bdc22f18ff40ea = L.circle(
+                [-6.952287276103415, 107.55746240130271],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_bb4a21b51f342c05237396eb6ae42a5e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_60751be8fbf1d134769a801c0dcad049 = $(`<div id="html_60751be8fbf1d134769a801c0dcad049" style="width: 100.0%; height: 100.0%;"><b>Andir</b><br>Sungai: 1 (6,691 m)<br>Drainase: 12 (4,232 m)<br>Water Density: 0.001814</div>`)[0];
+                popup_bb4a21b51f342c05237396eb6ae42a5e.setContent(html_60751be8fbf1d134769a801c0dcad049);
+            
+        
+
+        circle_175ca7d1518c054cb6bdc22f18ff40ea.bindPopup(popup_bb4a21b51f342c05237396eb6ae42a5e)
+        ;
+
+        
+    
+    
+            var circle_39072bef7271838c5d36e560b4ebbc0b = L.circle(
+                [-6.920348241269664, 107.55992402819261],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_cc6da521e881dbc9335d26ec9f3e44b7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_28a298f9228c891980759828ed168190 = $(`<div id="html_28a298f9228c891980759828ed168190" style="width: 100.0%; height: 100.0%;"><b>Antapani</b><br>Sungai: 7 (3,043 m)<br>Drainase: 23 (4,782 m)<br>Water Density: 0.00123</div>`)[0];
+                popup_cc6da521e881dbc9335d26ec9f3e44b7.setContent(html_28a298f9228c891980759828ed168190);
+            
+        
+
+        circle_39072bef7271838c5d36e560b4ebbc0b.bindPopup(popup_cc6da521e881dbc9335d26ec9f3e44b7)
+        ;
+
+        
+    
+    
+            var circle_c0b3f4c95a547440b0e847153d37364b = L.circle(
+                [-6.875892100984347, 107.55157843993227],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_4f3bfd0bd60814955558364aa4685216 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8a70e61e8c6ea6940792b422e083cea0 = $(`<div id="html_8a70e61e8c6ea6940792b422e083cea0" style="width: 100.0%; height: 100.0%;"><b>Arcamanik</b><br>Sungai: 8 (5,254 m)<br>Drainase: 17 (2,788 m)<br>Water Density: 0.002935</div>`)[0];
+                popup_4f3bfd0bd60814955558364aa4685216.setContent(html_8a70e61e8c6ea6940792b422e083cea0);
+            
+        
+
+        circle_c0b3f4c95a547440b0e847153d37364b.bindPopup(popup_4f3bfd0bd60814955558364aa4685216)
+        ;
+
+        
+    
+    
+            var circle_1efee0ace8e6de9021f4633f264738bc = L.circle(
+                [-6.9087418163969465, 107.58686372382117],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_f9ea8cbdc81265b615862e39ab14589b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c2c2d06050e13f971b373e9718376c11 = $(`<div id="html_c2c2d06050e13f971b373e9718376c11" style="width: 100.0%; height: 100.0%;"><b>Astana Anyar</b><br>Sungai: 8 (5,950 m)<br>Drainase: 16 (3,626 m)<br>Water Density: 0.002086</div>`)[0];
+                popup_f9ea8cbdc81265b615862e39ab14589b.setContent(html_c2c2d06050e13f971b373e9718376c11);
+            
+        
+
+        circle_1efee0ace8e6de9021f4633f264738bc.bindPopup(popup_f9ea8cbdc81265b615862e39ab14589b)
+        ;
+
+        
+    
+    
+            var circle_627f9164d93b71bdf401d8e89ec47f5b = L.circle(
+                [-6.880312204296357, 107.56615948760664],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_c75ba7c8a79fd8340bad1abd901d6c48 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d826759379b531a89f767cdac6a06960 = $(`<div id="html_d826759379b531a89f767cdac6a06960" style="width: 100.0%; height: 100.0%;"><b>Babakan Ciparay</b><br>Sungai: 6 (7,400 m)<br>Drainase: 6 (4,290 m)<br>Water Density: 0.002103</div>`)[0];
+                popup_c75ba7c8a79fd8340bad1abd901d6c48.setContent(html_d826759379b531a89f767cdac6a06960);
+            
+        
+
+        circle_627f9164d93b71bdf401d8e89ec47f5b.bindPopup(popup_c75ba7c8a79fd8340bad1abd901d6c48)
+        ;
+
+        
+    
+    
+            var circle_81e593ade31394fa3a19a1df92094560 = L.circle(
+                [-6.926650500860165, 107.58705556735548],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_3ab6d8e8b60e55e947fcd5d44544c89a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3d120448333c288738858974729bc816 = $(`<div id="html_3d120448333c288738858974729bc816" style="width: 100.0%; height: 100.0%;"><b>Bandung Kidul</b><br>Sungai: 5 (6,729 m)<br>Drainase: 18 (10,978 m)<br>Water Density: 0.002683</div>`)[0];
+                popup_3ab6d8e8b60e55e947fcd5d44544c89a.setContent(html_3d120448333c288738858974729bc816);
+            
+        
+
+        circle_81e593ade31394fa3a19a1df92094560.bindPopup(popup_3ab6d8e8b60e55e947fcd5d44544c89a)
+        ;
+
+        
+    
+    
+            var circle_1ff578df3387d0a7bcb51891974dcb73 = L.circle(
+                [-6.934935298273415, 107.5472004664295],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_29ca47f0b914ee38144b545ecb360ebf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e5f164cff9c6f52b82b6b7a9a3c45595 = $(`<div id="html_e5f164cff9c6f52b82b6b7a9a3c45595" style="width: 100.0%; height: 100.0%;"><b>Bandung Kulon</b><br>Sungai: 8 (5,204 m)<br>Drainase: 22 (10,608 m)<br>Water Density: 0.003437</div>`)[0];
+                popup_29ca47f0b914ee38144b545ecb360ebf.setContent(html_e5f164cff9c6f52b82b6b7a9a3c45595);
+            
+        
+
+        circle_1ff578df3387d0a7bcb51891974dcb73.bindPopup(popup_29ca47f0b914ee38144b545ecb360ebf)
+        ;
+
+        
+    
+    
+            var circle_916bfa87fde883cdc1317df6c55cc739 = L.circle(
+                [-6.91773517859263, 107.55751361997005],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_1d714c23fb52e0da426d495f9dbcf8c7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a72a3fe38517305ec2148f52f2af898 = $(`<div id="html_4a72a3fe38517305ec2148f52f2af898" style="width: 100.0%; height: 100.0%;"><b>Bandung Wetan</b><br>Sungai: 3 (5,054 m)<br>Drainase: 8 (10,705 m)<br>Water Density: 0.002008</div>`)[0];
+                popup_1d714c23fb52e0da426d495f9dbcf8c7.setContent(html_4a72a3fe38517305ec2148f52f2af898);
+            
+        
+
+        circle_916bfa87fde883cdc1317df6c55cc739.bindPopup(popup_1d714c23fb52e0da426d495f9dbcf8c7)
+        ;
+
+        
+    
+    
+            var circle_cb16d30c931b5e6bd1e11592ca23b273 = L.circle(
+                [-6.9032160481960805, 107.5553852353751],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_5df4c9d48f47d07b40c5ed808317d725 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7bdd2b7bf67507e6ff43aa06a455e294 = $(`<div id="html_7bdd2b7bf67507e6ff43aa06a455e294" style="width: 100.0%; height: 100.0%;"><b>Batununggal</b><br>Sungai: 4 (1,906 m)<br>Drainase: 23 (11,470 m)<br>Water Density: 0.001927</div>`)[0];
+                popup_5df4c9d48f47d07b40c5ed808317d725.setContent(html_7bdd2b7bf67507e6ff43aa06a455e294);
+            
+        
+
+        circle_cb16d30c931b5e6bd1e11592ca23b273.bindPopup(popup_5df4c9d48f47d07b40c5ed808317d725)
+        ;
+
+        
+    
+    
+            var circle_84f7c569bf09e0c22dc08b1143e1f50f = L.circle(
+                [-6.928608692363772, 107.60079860499684],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_c849759afe9a55e898eb94ab399cdce0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0e80a9570687ac3ea3327942d01bff70 = $(`<div id="html_0e80a9570687ac3ea3327942d01bff70" style="width: 100.0%; height: 100.0%;"><b>Bojongloa Kaler</b><br>Sungai: 4 (6,491 m)<br>Drainase: 17 (11,952 m)<br>Water Density: 0.003371</div>`)[0];
+                popup_c849759afe9a55e898eb94ab399cdce0.setContent(html_0e80a9570687ac3ea3327942d01bff70);
+            
+        
+
+        circle_84f7c569bf09e0c22dc08b1143e1f50f.bindPopup(popup_c849759afe9a55e898eb94ab399cdce0)
+        ;
+
+        
+    
+    
+            var circle_e722ef017682fe7554c6a833c27a661a = L.circle(
+                [-6.875514121294395, 107.55813174736542],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_8ef630e8cf931853e17c226aa0099f19 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e43e161c0e5a93077f0c8b439721b47b = $(`<div id="html_e43e161c0e5a93077f0c8b439721b47b" style="width: 100.0%; height: 100.0%;"><b>Bojongloa Kidul</b><br>Sungai: 1 (7,517 m)<br>Drainase: 7 (7,142 m)<br>Water Density: 0.005108</div>`)[0];
+                popup_8ef630e8cf931853e17c226aa0099f19.setContent(html_e43e161c0e5a93077f0c8b439721b47b);
+            
+        
+
+        circle_e722ef017682fe7554c6a833c27a661a.bindPopup(popup_8ef630e8cf931853e17c226aa0099f19)
+        ;
+
+        
+    
+    
+            var circle_cfc934e64a44e773366a7a99b7047604 = L.circle(
+                [-6.944204244201165, 107.64180862132305],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_35d7f5d2b393966d7e08ccde218b3e74 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_62b455200c1b74f165773a38f2500087 = $(`<div id="html_62b455200c1b74f165773a38f2500087" style="width: 100.0%; height: 100.0%;"><b>Buah Batu</b><br>Sungai: 1 (6,214 m)<br>Drainase: 25 (2,984 m)<br>Water Density: 0.001814</div>`)[0];
+                popup_35d7f5d2b393966d7e08ccde218b3e74.setContent(html_62b455200c1b74f165773a38f2500087);
+            
+        
+
+        circle_cfc934e64a44e773366a7a99b7047604.bindPopup(popup_35d7f5d2b393966d7e08ccde218b3e74)
+        ;
+
+        
+    
+    
+            var circle_37ea2fd9dd491a5d5a6bbff9a689d3b4 = L.circle(
+                [-6.955088762266471, 107.65633806577084],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_472967e2b036c45eb8be53433ad1af9b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c7d5998a8814c2771c045181654f0839 = $(`<div id="html_c7d5998a8814c2771c045181654f0839" style="width: 100.0%; height: 100.0%;"><b>Cibeunying Kaler</b><br>Sungai: 2 (1,854 m)<br>Drainase: 22 (10,360 m)<br>Water Density: 0.00176</div>`)[0];
+                popup_472967e2b036c45eb8be53433ad1af9b.setContent(html_c7d5998a8814c2771c045181654f0839);
+            
+        
+
+        circle_37ea2fd9dd491a5d5a6bbff9a689d3b4.bindPopup(popup_472967e2b036c45eb8be53433ad1af9b)
+        ;
+
+        
+    
+    
+            var circle_26660494499c5c92f917602711c3afa6 = L.circle(
+                [-6.905393272288716, 107.57883860463139],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_45e162a9c97623692f9e887492fbfe36 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cf36d3e9ed9f41d6c71cdd7f9158ac15 = $(`<div id="html_cf36d3e9ed9f41d6c71cdd7f9158ac15" style="width: 100.0%; height: 100.0%;"><b>Cibeunying Kidul</b><br>Sungai: 7 (6,376 m)<br>Drainase: 22 (8,619 m)<br>Water Density: 0.002999</div>`)[0];
+                popup_45e162a9c97623692f9e887492fbfe36.setContent(html_cf36d3e9ed9f41d6c71cdd7f9158ac15);
+            
+        
+
+        circle_26660494499c5c92f917602711c3afa6.bindPopup(popup_45e162a9c97623692f9e887492fbfe36)
+        ;
+
+        
+    
+    
+            var circle_06408dc7de5aa3ffb7ab1200a92fc2fe = L.circle(
+                [-6.881594612022438, 107.6392553696976],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_868109b46d8d7f5a88e5d80c1e1579be = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_83ad8749bb691b4ee4d5c7d10e30a4db = $(`<div id="html_83ad8749bb691b4ee4d5c7d10e30a4db" style="width: 100.0%; height: 100.0%;"><b>Cibiru</b><br>Sungai: 2 (7,459 m)<br>Drainase: 7 (7,950 m)<br>Water Density: 0.005484</div>`)[0];
+                popup_868109b46d8d7f5a88e5d80c1e1579be.setContent(html_83ad8749bb691b4ee4d5c7d10e30a4db);
+            
+        
+
+        circle_06408dc7de5aa3ffb7ab1200a92fc2fe.bindPopup(popup_868109b46d8d7f5a88e5d80c1e1579be)
+        ;
+
+        
+    
+    
+            var circle_3fe2da2f362c64e707de40346f166da5 = L.circle(
+                [-6.926088405765963, 107.64317959095504],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_370226ad534e19c10bb4311822f82a85 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dc9986f69a1733cdadab4bc354045bf0 = $(`<div id="html_dc9986f69a1733cdadab4bc354045bf0" style="width: 100.0%; height: 100.0%;"><b>Cicendo</b><br>Sungai: 6 (3,171 m)<br>Drainase: 17 (3,309 m)<br>Water Density: 0.00179</div>`)[0];
+                popup_370226ad534e19c10bb4311822f82a85.setContent(html_dc9986f69a1733cdadab4bc354045bf0);
+            
+        
+
+        circle_3fe2da2f362c64e707de40346f166da5.bindPopup(popup_370226ad534e19c10bb4311822f82a85)
+        ;
+
+        
+    
+    
+            var circle_b9cec47dd3248817add4381e648ff0da = L.circle(
+                [-6.93838237764005, 107.62006830314287],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_35365e67b28edf647b1c8a82d0c85221 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a23ac07c4a016bdf03d66d684636e251 = $(`<div id="html_a23ac07c4a016bdf03d66d684636e251" style="width: 100.0%; height: 100.0%;"><b>Cidadap</b><br>Sungai: 4 (4,087 m)<br>Drainase: 10 (6,382 m)<br>Water Density: 0.001426</div>`)[0];
+                popup_35365e67b28edf647b1c8a82d0c85221.setContent(html_a23ac07c4a016bdf03d66d684636e251);
+            
+        
+
+        circle_b9cec47dd3248817add4381e648ff0da.bindPopup(popup_35365e67b28edf647b1c8a82d0c85221)
+        ;
+
+        
+    
+    
+            var circle_40d28d4c2360a890a34aa9d6ad53fd98 = L.circle(
+                [-6.909563254305472, 107.64412062295726],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_a88756bd0225c50af8d648ac117c61c3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2c16da899dce722d31385422d02ec4a = $(`<div id="html_d2c16da899dce722d31385422d02ec4a" style="width: 100.0%; height: 100.0%;"><b>Cinambo</b><br>Sungai: 5 (3,472 m)<br>Drainase: 11 (9,176 m)<br>Water Density: 0.002283</div>`)[0];
+                popup_a88756bd0225c50af8d648ac117c61c3.setContent(html_d2c16da899dce722d31385422d02ec4a);
+            
+        
+
+        circle_40d28d4c2360a890a34aa9d6ad53fd98.bindPopup(popup_a88756bd0225c50af8d648ac117c61c3)
+        ;
+
+        
+    
+    
+            var circle_f3e5f24e2004d1eb246d29c18a94f7d7 = L.circle(
+                [-6.928626316300561, 107.59478857817615],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_b27e3b569a9f5b3d9c4d7c31a16c557e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ddb008e00497986c725c615587ea4b80 = $(`<div id="html_ddb008e00497986c725c615587ea4b80" style="width: 100.0%; height: 100.0%;"><b>Coblong</b><br>Sungai: 8 (5,362 m)<br>Drainase: 18 (7,609 m)<br>Water Density: 0.003826</div>`)[0];
+                popup_b27e3b569a9f5b3d9c4d7c31a16c557e.setContent(html_ddb008e00497986c725c615587ea4b80);
+            
+        
+
+        circle_f3e5f24e2004d1eb246d29c18a94f7d7.bindPopup(popup_b27e3b569a9f5b3d9c4d7c31a16c557e)
+        ;
+
+        
+    
+    
+            var circle_3b1fa1e9b3d4a1cd9676cf02ad5402ea = L.circle(
+                [-6.887764881907747, 107.60853025606369],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_c0768b83a13c33bfbc97775c98e536df = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fbea048eaa5df83dedf54d53964bcb95 = $(`<div id="html_fbea048eaa5df83dedf54d53964bcb95" style="width: 100.0%; height: 100.0%;"><b>Gedebage</b><br>Sungai: 1 (7,792 m)<br>Drainase: 11 (8,821 m)<br>Water Density: 0.002116</div>`)[0];
+                popup_c0768b83a13c33bfbc97775c98e536df.setContent(html_fbea048eaa5df83dedf54d53964bcb95);
+            
+        
+
+        circle_3b1fa1e9b3d4a1cd9676cf02ad5402ea.bindPopup(popup_c0768b83a13c33bfbc97775c98e536df)
+        ;
+
+        
+    
+    
+            var circle_bbbf01e06e59fa591137599879da0a89 = L.circle(
+                [-6.895364650320509, 107.62360239171666],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_a63a26be4800f99180a86660ddf5ad46 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_847bd8ac90bc5aa95c6a9df7ad1c9c07 = $(`<div id="html_847bd8ac90bc5aa95c6a9df7ad1c9c07" style="width: 100.0%; height: 100.0%;"><b>Kiaracondong</b><br>Sungai: 6 (6,977 m)<br>Drainase: 18 (10,022 m)<br>Water Density: 0.002595</div>`)[0];
+                popup_a63a26be4800f99180a86660ddf5ad46.setContent(html_847bd8ac90bc5aa95c6a9df7ad1c9c07);
+            
+        
+
+        circle_bbbf01e06e59fa591137599879da0a89.bindPopup(popup_a63a26be4800f99180a86660ddf5ad46)
+        ;
+
+        
+    
+    
+            var circle_0cafc74c87aceed74d3a0d28262e0de2 = L.circle(
+                [-6.897000813203413, 107.65381182846443],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_d2e66e8ea32eacae5555cc6f4734a167 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_777240a47bad72761ca3e62052be8a64 = $(`<div id="html_777240a47bad72761ca3e62052be8a64" style="width: 100.0%; height: 100.0%;"><b>Lengkong</b><br>Sungai: 1 (6,120 m)<br>Drainase: 17 (5,283 m)<br>Water Density: 0.003041</div>`)[0];
+                popup_d2e66e8ea32eacae5555cc6f4734a167.setContent(html_777240a47bad72761ca3e62052be8a64);
+            
+        
+
+        circle_0cafc74c87aceed74d3a0d28262e0de2.bindPopup(popup_d2e66e8ea32eacae5555cc6f4734a167)
+        ;
+
+        
+    
+    
+            var circle_2d2931b57771c009e919a0922fd90a4c = L.circle(
+                [-6.913247717687079, 107.62721642662838],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_3bcae6f0c4e8ac305f69131311a36dd3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ffe1a6a34014661ce9112cd33622dff = $(`<div id="html_9ffe1a6a34014661ce9112cd33622dff" style="width: 100.0%; height: 100.0%;"><b>Mandalajati</b><br>Sungai: 7 (3,920 m)<br>Drainase: 15 (6,364 m)<br>Water Density: 0.003795</div>`)[0];
+                popup_3bcae6f0c4e8ac305f69131311a36dd3.setContent(html_9ffe1a6a34014661ce9112cd33622dff);
+            
+        
+
+        circle_2d2931b57771c009e919a0922fd90a4c.bindPopup(popup_3bcae6f0c4e8ac305f69131311a36dd3)
+        ;
+
+        
+    
+    
+            var circle_ed77585c8bd0ab996552a93fda9f0da9 = L.circle(
+                [-6.923293053135977, 107.55082095680893],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_759faabc8e86d8600a8d02b918b1acb0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b571a4ddf7f01aa8cdf0d98c72ef7111 = $(`<div id="html_b571a4ddf7f01aa8cdf0d98c72ef7111" style="width: 100.0%; height: 100.0%;"><b>Panyileukan</b><br>Sungai: 2 (6,538 m)<br>Drainase: 14 (7,071 m)<br>Water Density: 0.003217</div>`)[0];
+                popup_759faabc8e86d8600a8d02b918b1acb0.setContent(html_b571a4ddf7f01aa8cdf0d98c72ef7111);
+            
+        
+
+        circle_ed77585c8bd0ab996552a93fda9f0da9.bindPopup(popup_759faabc8e86d8600a8d02b918b1acb0)
+        ;
+
+        
+    
+    
+            var circle_48c2f571915624b4daa5db337407b501 = L.circle(
+                [-6.889124414532701, 107.56877578990981],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_bf83ee1a9d48a7a13fe1067ec123b137 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3621daf50edb1b99d9d2794554e89c27 = $(`<div id="html_3621daf50edb1b99d9d2794554e89c27" style="width: 100.0%; height: 100.0%;"><b>Rancasari</b><br>Sungai: 7 (7,000 m)<br>Drainase: 24 (8,547 m)<br>Water Density: 0.003811</div>`)[0];
+                popup_bf83ee1a9d48a7a13fe1067ec123b137.setContent(html_3621daf50edb1b99d9d2794554e89c27);
+            
+        
+
+        circle_48c2f571915624b4daa5db337407b501.bindPopup(popup_bf83ee1a9d48a7a13fe1067ec123b137)
+        ;
+
+        
+    
+    
+            var circle_bd5ef58f1a6283b3f611eec2348f25e2 = L.circle(
+                [-6.883182883400955, 107.6566375094237],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_8177f182e582f7331e79f5eddd3b2bac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_87f26e1352b34c6e54b51d584efe6b17 = $(`<div id="html_87f26e1352b34c6e54b51d584efe6b17" style="width: 100.0%; height: 100.0%;"><b>Regol</b><br>Sungai: 3 (1,671 m)<br>Drainase: 12 (11,839 m)<br>Water Density: 0.001947</div>`)[0];
+                popup_8177f182e582f7331e79f5eddd3b2bac.setContent(html_87f26e1352b34c6e54b51d584efe6b17);
+            
+        
+
+        circle_bd5ef58f1a6283b3f611eec2348f25e2.bindPopup(popup_8177f182e582f7331e79f5eddd3b2bac)
+        ;
+
+        
+    
+    
+            var circle_b05626e48990bae8606bbaff535a7b45 = L.circle(
+                [-6.897773325833903, 107.56741522652051],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_ac926ca6fdfc10f10b71c47c9defb986 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_142243953a1572cec5eb0b624e350813 = $(`<div id="html_142243953a1572cec5eb0b624e350813" style="width: 100.0%; height: 100.0%;"><b>Sukajadi</b><br>Sungai: 2 (6,949 m)<br>Drainase: 12 (3,759 m)<br>Water Density: 0.001481</div>`)[0];
+                popup_ac926ca6fdfc10f10b71c47c9defb986.setContent(html_142243953a1572cec5eb0b624e350813);
+            
+        
+
+        circle_b05626e48990bae8606bbaff535a7b45.bindPopup(popup_ac926ca6fdfc10f10b71c47c9defb986)
+        ;
+
+        
+    
+    
+            var circle_55a539a57e0f247d284b973b93afdfa1 = L.circle(
+                [-6.926677546248746, 107.59394319684856],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_2d5336f80518ce3612bd4b081c125b99 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a93d31b7fa5b7bfb21aed79185d035e5 = $(`<div id="html_a93d31b7fa5b7bfb21aed79185d035e5" style="width: 100.0%; height: 100.0%;"><b>Sukasari</b><br>Sungai: 7 (7,314 m)<br>Drainase: 22 (6,459 m)<br>Water Density: 0.002346</div>`)[0];
+                popup_2d5336f80518ce3612bd4b081c125b99.setContent(html_a93d31b7fa5b7bfb21aed79185d035e5);
+            
+        
+
+        circle_55a539a57e0f247d284b973b93afdfa1.bindPopup(popup_2d5336f80518ce3612bd4b081c125b99)
+        ;
+
+        
+    
+    
+            var circle_d171b952064dc0dc4526ee5997a928c2 = L.circle(
+                [-6.950403829968868, 107.60181204842418],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_0735ed114045e41027e7cbb6db886a96 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4554fbdf352d778bed7f52ac25e70e3f = $(`<div id="html_4554fbdf352d778bed7f52ac25e70e3f" style="width: 100.0%; height: 100.0%;"><b>Sumur Bandung</b><br>Sungai: 2 (2,469 m)<br>Drainase: 12 (5,830 m)<br>Water Density: 0.001948</div>`)[0];
+                popup_0735ed114045e41027e7cbb6db886a96.setContent(html_4554fbdf352d778bed7f52ac25e70e3f);
+            
+        
+
+        circle_d171b952064dc0dc4526ee5997a928c2.bindPopup(popup_0735ed114045e41027e7cbb6db886a96)
+        ;
+
+        
+    
+    
+            var circle_df94676e1999456cba27bf59dbab6fcd = L.circle(
+                [-6.905414833694052, 107.58733273191719],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cyan", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 3}
+            ).addTo(feature_group_ca55211a1893f481411b35185620e3d3);
+        
+    
+        var popup_4814dd399cd800bbbf7cc50c8675d673 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7513b3f42f3adf7b5f252c15656cc3da = $(`<div id="html_7513b3f42f3adf7b5f252c15656cc3da" style="width: 100.0%; height: 100.0%;"><b>Ujung Berung</b><br>Sungai: 7 (4,839 m)<br>Drainase: 16 (4,986 m)<br>Water Density: 0.001339</div>`)[0];
+                popup_4814dd399cd800bbbf7cc50c8675d673.setContent(html_7513b3f42f3adf7b5f252c15656cc3da);
+            
+        
+
+        circle_df94676e1999456cba27bf59dbab6fcd.bindPopup(popup_4814dd399cd800bbbf7cc50c8675d673)
+        ;
+
+        
+    
+    
+            feature_group_ca55211a1893f481411b35185620e3d3.addTo(map_fd48dc79befacf4abd69e1044a16896f);
+        
+    
+            var feature_group_57a02d42191143598c12deba6b6ddd17 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_288c6d09453b4a18bd96479048246fe0 = L.circleMarker(
+                [-6.955287276103415, 107.56046240130271],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_0f4abe07800333955bb7bac4e30e44b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_87a4321d23433423eff00a90905233cd = $(`<div id="html_87a4321d23433423eff00a90905233cd" style="width: 100.0%; height: 100.0%;"><b>Andir</b><br>Rumah Sakit: 4<br>Klinik: 8<br>Sekolah: 6<br>Fasum Density: 3.156</div>`)[0];
+                popup_0f4abe07800333955bb7bac4e30e44b4.setContent(html_87a4321d23433423eff00a90905233cd);
+            
+        
+
+        circle_marker_288c6d09453b4a18bd96479048246fe0.bindPopup(popup_0f4abe07800333955bb7bac4e30e44b4)
+        ;
+
+        
+    
+    
+            var circle_marker_a20b183173a9f1a8e44df270da6d156f = L.circleMarker(
+                [-6.9233482412696645, 107.56292402819261],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_65092aeca709a6c4920687abd4248b32 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dcba14690bba4bc90cefeb21a4e3db49 = $(`<div id="html_dcba14690bba4bc90cefeb21a4e3db49" style="width: 100.0%; height: 100.0%;"><b>Antapani</b><br>Rumah Sakit: 2<br>Klinik: 4<br>Sekolah: 11<br>Fasum Density: 3.145</div>`)[0];
+                popup_65092aeca709a6c4920687abd4248b32.setContent(html_dcba14690bba4bc90cefeb21a4e3db49);
+            
+        
+
+        circle_marker_a20b183173a9f1a8e44df270da6d156f.bindPopup(popup_65092aeca709a6c4920687abd4248b32)
+        ;
+
+        
+    
+    
+            var circle_marker_6e473984b2664610099670b5c13c292d = L.circleMarker(
+                [-6.878892100984348, 107.55457843993227],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_682bcd00ca7027bb9f84825ccc553928 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6e9db9fe85b3a363d51cb2e21ddb2481 = $(`<div id="html_6e9db9fe85b3a363d51cb2e21ddb2481" style="width: 100.0%; height: 100.0%;"><b>Arcamanik</b><br>Rumah Sakit: 4<br>Klinik: 5<br>Sekolah: 27<br>Fasum Density: 13.504</div>`)[0];
+                popup_682bcd00ca7027bb9f84825ccc553928.setContent(html_6e9db9fe85b3a363d51cb2e21ddb2481);
+            
+        
+
+        circle_marker_6e473984b2664610099670b5c13c292d.bindPopup(popup_682bcd00ca7027bb9f84825ccc553928)
+        ;
+
+        
+    
+    
+            var circle_marker_238fe126defb1dff783869d64024bc93 = L.circleMarker(
+                [-6.911741816396947, 107.58986372382117],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_2a949da02fd4e75fc1912063b67e8b45 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea8b42be2c8b0fdef6073e413c454e0f = $(`<div id="html_ea8b42be2c8b0fdef6073e413c454e0f" style="width: 100.0%; height: 100.0%;"><b>Astana Anyar</b><br>Rumah Sakit: 0<br>Klinik: 11<br>Sekolah: 25<br>Fasum Density: 9.15</div>`)[0];
+                popup_2a949da02fd4e75fc1912063b67e8b45.setContent(html_ea8b42be2c8b0fdef6073e413c454e0f);
+            
+        
+
+        circle_marker_238fe126defb1dff783869d64024bc93.bindPopup(popup_2a949da02fd4e75fc1912063b67e8b45)
+        ;
+
+        
+    
+    
+            var circle_marker_08c205fae9ec1692448ae59f3de40f5e = L.circleMarker(
+                [-6.883312204296357, 107.56915948760664],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_7e85509bead712e8e868663de64ef78a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_13a8d863c52e0ebbf218d6b7d64e2018 = $(`<div id="html_13a8d863c52e0ebbf218d6b7d64e2018" style="width: 100.0%; height: 100.0%;"><b>Babakan Ciparay</b><br>Rumah Sakit: 4<br>Klinik: 7<br>Sekolah: 11<br>Fasum Density: 5.576</div>`)[0];
+                popup_7e85509bead712e8e868663de64ef78a.setContent(html_13a8d863c52e0ebbf218d6b7d64e2018);
+            
+        
+
+        circle_marker_08c205fae9ec1692448ae59f3de40f5e.bindPopup(popup_7e85509bead712e8e868663de64ef78a)
+        ;
+
+        
+    
+    
+            var circle_marker_a59bb77c14f4dd6fd6348be4ed0a75ca = L.circleMarker(
+                [-6.929650500860165, 107.59005556735548],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_2a6aa1e0b8b9e5809a81b6b8f7c17e81 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fa1bdbd679829367c1d627478de6f2d8 = $(`<div id="html_fa1bdbd679829367c1d627478de6f2d8" style="width: 100.0%; height: 100.0%;"><b>Bandung Kidul</b><br>Rumah Sakit: 3<br>Klinik: 3<br>Sekolah: 29<br>Fasum Density: 5.455</div>`)[0];
+                popup_2a6aa1e0b8b9e5809a81b6b8f7c17e81.setContent(html_fa1bdbd679829367c1d627478de6f2d8);
+            
+        
+
+        circle_marker_a59bb77c14f4dd6fd6348be4ed0a75ca.bindPopup(popup_2a6aa1e0b8b9e5809a81b6b8f7c17e81)
+        ;
+
+        
+    
+    
+            var circle_marker_9e61efc23b7a6e3ffbcd40862489879f = L.circleMarker(
+                [-6.937935298273415, 107.5502004664295],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_563dc800d1e9d9d457e4cfc06c1e5fec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a8ae21c7ee4ba8497248a81ae58a90c = $(`<div id="html_9a8ae21c7ee4ba8497248a81ae58a90c" style="width: 100.0%; height: 100.0%;"><b>Bandung Kulon</b><br>Rumah Sakit: 2<br>Klinik: 12<br>Sekolah: 15<br>Fasum Density: 6.957</div>`)[0];
+                popup_563dc800d1e9d9d457e4cfc06c1e5fec.setContent(html_9a8ae21c7ee4ba8497248a81ae58a90c);
+            
+        
+
+        circle_marker_9e61efc23b7a6e3ffbcd40862489879f.bindPopup(popup_563dc800d1e9d9d457e4cfc06c1e5fec)
+        ;
+
+        
+    
+    
+            var circle_marker_8c1a7f0e8e5f8a21aafc92e4a6d83463 = L.circleMarker(
+                [-6.92073517859263, 107.56051361997005],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_ca6f8622a9dda180b9e08d227f06928f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_95ff00bba6a9440401502a996bbbfae8 = $(`<div id="html_95ff00bba6a9440401502a996bbbfae8" style="width: 100.0%; height: 100.0%;"><b>Bandung Wetan</b><br>Rumah Sakit: 2<br>Klinik: 4<br>Sekolah: 22<br>Fasum Density: 4.204</div>`)[0];
+                popup_ca6f8622a9dda180b9e08d227f06928f.setContent(html_95ff00bba6a9440401502a996bbbfae8);
+            
+        
+
+        circle_marker_8c1a7f0e8e5f8a21aafc92e4a6d83463.bindPopup(popup_ca6f8622a9dda180b9e08d227f06928f)
+        ;
+
+        
+    
+    
+            var circle_marker_7bf4c2c9fc561de1db2efd6808360e4f = L.circleMarker(
+                [-6.906216048196081, 107.5583852353751],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_9ec1cacd56471d2b9305d89c2d832aa2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d53f5d8c7455f615deefc9cb630a7685 = $(`<div id="html_d53f5d8c7455f615deefc9cb630a7685" style="width: 100.0%; height: 100.0%;"><b>Batununggal</b><br>Rumah Sakit: 4<br>Klinik: 4<br>Sekolah: 9<br>Fasum Density: 3.746</div>`)[0];
+                popup_9ec1cacd56471d2b9305d89c2d832aa2.setContent(html_d53f5d8c7455f615deefc9cb630a7685);
+            
+        
+
+        circle_marker_7bf4c2c9fc561de1db2efd6808360e4f.bindPopup(popup_9ec1cacd56471d2b9305d89c2d832aa2)
+        ;
+
+        
+    
+    
+            var circle_marker_1a0f0d1f946b415836e8dfd7158ece4a = L.circleMarker(
+                [-6.931608692363772, 107.60379860499684],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_846fde6ad647a3d740d899f54886a50b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_96d162c6dee7c62f135f623eadc447ae = $(`<div id="html_96d162c6dee7c62f135f623eadc447ae" style="width: 100.0%; height: 100.0%;"><b>Bojongloa Kaler</b><br>Rumah Sakit: 1<br>Klinik: 5<br>Sekolah: 7<br>Fasum Density: 2.925</div>`)[0];
+                popup_846fde6ad647a3d740d899f54886a50b.setContent(html_96d162c6dee7c62f135f623eadc447ae);
+            
+        
+
+        circle_marker_1a0f0d1f946b415836e8dfd7158ece4a.bindPopup(popup_846fde6ad647a3d740d899f54886a50b)
+        ;
+
+        
+    
+    
+            var circle_marker_b9f82938108be1cb4596193e46700c27 = L.circleMarker(
+                [-6.878514121294395, 107.56113174736542],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_2aedcd5ba0956d58d78191fb86faff4a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ad7dd2d7ef43627a0ba070c31350ae2 = $(`<div id="html_2ad7dd2d7ef43627a0ba070c31350ae2" style="width: 100.0%; height: 100.0%;"><b>Bojongloa Kidul</b><br>Rumah Sakit: 4<br>Klinik: 11<br>Sekolah: 20<br>Fasum Density: 13.937</div>`)[0];
+                popup_2aedcd5ba0956d58d78191fb86faff4a.setContent(html_2ad7dd2d7ef43627a0ba070c31350ae2);
+            
+        
+
+        circle_marker_b9f82938108be1cb4596193e46700c27.bindPopup(popup_2aedcd5ba0956d58d78191fb86faff4a)
+        ;
+
+        
+    
+    
+            var circle_marker_b5d6fbbd23e60b61b375a93ed9a1708b = L.circleMarker(
+                [-6.947204244201165, 107.64480862132305],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_6762c7dd217a104e56d95f8f2ef4ceb8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7f7cbc22154cbde7a20054df0149cbff = $(`<div id="html_7f7cbc22154cbde7a20054df0149cbff" style="width: 100.0%; height: 100.0%;"><b>Buah Batu</b><br>Rumah Sakit: 1<br>Klinik: 5<br>Sekolah: 22<br>Fasum Density: 6.509</div>`)[0];
+                popup_6762c7dd217a104e56d95f8f2ef4ceb8.setContent(html_7f7cbc22154cbde7a20054df0149cbff);
+            
+        
+
+        circle_marker_b5d6fbbd23e60b61b375a93ed9a1708b.bindPopup(popup_6762c7dd217a104e56d95f8f2ef4ceb8)
+        ;
+
+        
+    
+    
+            var circle_marker_2212282d4acc8a6fd9df14cfba4c71ff = L.circleMarker(
+                [-6.958088762266471, 107.65933806577084],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_15b4422a6b12a3d8feb7ea6377d8051c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_824a456f13689b5fac5ce4d6a28c169a = $(`<div id="html_824a456f13689b5fac5ce4d6a28c169a" style="width: 100.0%; height: 100.0%;"><b>Cibeunying Kaler</b><br>Rumah Sakit: 3<br>Klinik: 9<br>Sekolah: 11<br>Fasum Density: 3.89</div>`)[0];
+                popup_15b4422a6b12a3d8feb7ea6377d8051c.setContent(html_824a456f13689b5fac5ce4d6a28c169a);
+            
+        
+
+        circle_marker_2212282d4acc8a6fd9df14cfba4c71ff.bindPopup(popup_15b4422a6b12a3d8feb7ea6377d8051c)
+        ;
+
+        
+    
+    
+            var circle_marker_ae08bdfcd9d6bd8a9e02d57ec93434a3 = L.circleMarker(
+                [-6.908393272288716, 107.58183860463139],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_948eeb5ab6af1b96d66a3517e5932ad9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eaeaf8419beb414025c22270829aaec0 = $(`<div id="html_eaeaf8419beb414025c22270829aaec0" style="width: 100.0%; height: 100.0%;"><b>Cibeunying Kidul</b><br>Rumah Sakit: 4<br>Klinik: 10<br>Sekolah: 6<br>Fasum Density: 5.6</div>`)[0];
+                popup_948eeb5ab6af1b96d66a3517e5932ad9.setContent(html_eaeaf8419beb414025c22270829aaec0);
+            
+        
+
+        circle_marker_ae08bdfcd9d6bd8a9e02d57ec93434a3.bindPopup(popup_948eeb5ab6af1b96d66a3517e5932ad9)
+        ;
+
+        
+    
+    
+            var circle_marker_83a85e1d480d1d1fe879358209c3ba63 = L.circleMarker(
+                [-6.884594612022438, 107.6422553696976],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_e9b0964d14f50d20fa1781daa604acb1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2bbdd94e336403e61d1633f6ad4c9091 = $(`<div id="html_2bbdd94e336403e61d1633f6ad4c9091" style="width: 100.0%; height: 100.0%;"><b>Cibiru</b><br>Rumah Sakit: 4<br>Klinik: 5<br>Sekolah: 23<br>Fasum Density: 13.167</div>`)[0];
+                popup_e9b0964d14f50d20fa1781daa604acb1.setContent(html_2bbdd94e336403e61d1633f6ad4c9091);
+            
+        
+
+        circle_marker_83a85e1d480d1d1fe879358209c3ba63.bindPopup(popup_e9b0964d14f50d20fa1781daa604acb1)
+        ;
+
+        
+    
+    
+            var circle_marker_57ec4a5af76f80ccf8e47cda6fba510d = L.circleMarker(
+                [-6.929088405765963, 107.64617959095504],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_478b7647710f046a27016b4bbc97b022 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d90a02835b529e3d3e6dc3a817a8fd1a = $(`<div id="html_d90a02835b529e3d3e6dc3a817a8fd1a" style="width: 100.0%; height: 100.0%;"><b>Cicendo</b><br>Rumah Sakit: 0<br>Klinik: 2<br>Sekolah: 19<br>Fasum Density: 8.287</div>`)[0];
+                popup_478b7647710f046a27016b4bbc97b022.setContent(html_d90a02835b529e3d3e6dc3a817a8fd1a);
+            
+        
+
+        circle_marker_57ec4a5af76f80ccf8e47cda6fba510d.bindPopup(popup_478b7647710f046a27016b4bbc97b022)
+        ;
+
+        
+    
+    
+            var circle_marker_44321118b8eb1d1905baefeae11366f2 = L.circleMarker(
+                [-6.94138237764005, 107.62306830314287],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_45f7eba42f084c22be1bf2a2762623e5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_99808f022b20a0dd553c62edbea2bb36 = $(`<div id="html_99808f022b20a0dd553c62edbea2bb36" style="width: 100.0%; height: 100.0%;"><b>Cidadap</b><br>Rumah Sakit: 4<br>Klinik: 2<br>Sekolah: 26<br>Fasum Density: 5.313</div>`)[0];
+                popup_45f7eba42f084c22be1bf2a2762623e5.setContent(html_99808f022b20a0dd553c62edbea2bb36);
+            
+        
+
+        circle_marker_44321118b8eb1d1905baefeae11366f2.bindPopup(popup_45f7eba42f084c22be1bf2a2762623e5)
+        ;
+
+        
+    
+    
+            var circle_marker_00478b93da33200df14166d40b4b08e2 = L.circleMarker(
+                [-6.912563254305472, 107.64712062295726],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_cffbe771538f2bdb85c6e5d705a9707b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2b9e73cf970de43e5e4ffd34e7cefd4 = $(`<div id="html_d2b9e73cf970de43e5e4ffd34e7cefd4" style="width: 100.0%; height: 100.0%;"><b>Cinambo</b><br>Rumah Sakit: 2<br>Klinik: 2<br>Sekolah: 7<br>Fasum Density: 3.61</div>`)[0];
+                popup_cffbe771538f2bdb85c6e5d705a9707b.setContent(html_d2b9e73cf970de43e5e4ffd34e7cefd4);
+            
+        
+
+        circle_marker_00478b93da33200df14166d40b4b08e2.bindPopup(popup_cffbe771538f2bdb85c6e5d705a9707b)
+        ;
+
+        
+    
+    
+            var circle_marker_d4878849e73b8a994752926d6951ae2c = L.circleMarker(
+                [-6.931626316300561, 107.59778857817615],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_938a2a8a92daa2dd3d861d9c50394a6f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bc865d0d6d26ab97d3a0510fbba77fec = $(`<div id="html_bc865d0d6d26ab97d3a0510fbba77fec" style="width: 100.0%; height: 100.0%;"><b>Coblong</b><br>Rumah Sakit: 4<br>Klinik: 2<br>Sekolah: 16<br>Fasum Density: 9.145</div>`)[0];
+                popup_938a2a8a92daa2dd3d861d9c50394a6f.setContent(html_bc865d0d6d26ab97d3a0510fbba77fec);
+            
+        
+
+        circle_marker_d4878849e73b8a994752926d6951ae2c.bindPopup(popup_938a2a8a92daa2dd3d861d9c50394a6f)
+        ;
+
+        
+    
+    
+            var circle_marker_342d3333f83d6d827cbc178287b308f1 = L.circleMarker(
+                [-6.890764881907747, 107.61153025606369],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_e1ed1006ec204b9b44a9ffdc528df7eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05fd5e94ce4f9d59522e51908c9d1285 = $(`<div id="html_05fd5e94ce4f9d59522e51908c9d1285" style="width: 100.0%; height: 100.0%;"><b>Gedebage</b><br>Rumah Sakit: 3<br>Klinik: 11<br>Sekolah: 28<br>Fasum Density: 5.732</div>`)[0];
+                popup_e1ed1006ec204b9b44a9ffdc528df7eb.setContent(html_05fd5e94ce4f9d59522e51908c9d1285);
+            
+        
+
+        circle_marker_342d3333f83d6d827cbc178287b308f1.bindPopup(popup_e1ed1006ec204b9b44a9ffdc528df7eb)
+        ;
+
+        
+    
+    
+            var circle_marker_603b41d6524623a61af8840ebe3ed682 = L.circleMarker(
+                [-6.898364650320509, 107.62660239171666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_64582c4636fbf20b8c4639bb1671d6a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_615aeba8baecdf8dc72da39f4e552b98 = $(`<div id="html_615aeba8baecdf8dc72da39f4e552b98" style="width: 100.0%; height: 100.0%;"><b>Kiaracondong</b><br>Rumah Sakit: 0<br>Klinik: 8<br>Sekolah: 6<br>Fasum Density: 2.901</div>`)[0];
+                popup_64582c4636fbf20b8c4639bb1671d6a6.setContent(html_615aeba8baecdf8dc72da39f4e552b98);
+            
+        
+
+        circle_marker_603b41d6524623a61af8840ebe3ed682.bindPopup(popup_64582c4636fbf20b8c4639bb1671d6a6)
+        ;
+
+        
+    
+    
+            var circle_marker_f7531ae8790ee9146bab1ca51751c79c = L.circleMarker(
+                [-6.900000813203413, 107.65681182846443],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_7dafc5ea46197c01967825d2bdd29b72 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3d87b0c3a7413d0164d9cefa692048ce = $(`<div id="html_3d87b0c3a7413d0164d9cefa692048ce" style="width: 100.0%; height: 100.0%;"><b>Lengkong</b><br>Rumah Sakit: 3<br>Klinik: 12<br>Sekolah: 22<br>Fasum Density: 10.667</div>`)[0];
+                popup_7dafc5ea46197c01967825d2bdd29b72.setContent(html_3d87b0c3a7413d0164d9cefa692048ce);
+            
+        
+
+        circle_marker_f7531ae8790ee9146bab1ca51751c79c.bindPopup(popup_7dafc5ea46197c01967825d2bdd29b72)
+        ;
+
+        
+    
+    
+            var circle_marker_b0df6638c24b62fcfa348e6edb1a171d = L.circleMarker(
+                [-6.916247717687079, 107.63021642662838],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_eddc83587bcc86a644138165efe30270 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27585a1017d32812b6a2bb377680978a = $(`<div id="html_27585a1017d32812b6a2bb377680978a" style="width: 100.0%; height: 100.0%;"><b>Mandalajati</b><br>Rumah Sakit: 0<br>Klinik: 8<br>Sekolah: 5<br>Fasum Density: 8.118</div>`)[0];
+                popup_eddc83587bcc86a644138165efe30270.setContent(html_27585a1017d32812b6a2bb377680978a);
+            
+        
+
+        circle_marker_b0df6638c24b62fcfa348e6edb1a171d.bindPopup(popup_eddc83587bcc86a644138165efe30270)
+        ;
+
+        
+    
+    
+            var circle_marker_05b014bb392a308e35eecc7e84cd0de6 = L.circleMarker(
+                [-6.926293053135977, 107.55382095680893],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_b4bb180fb3150ce63752579c24e68edd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_262c99a47a4f003e7f7fb2802bb1468b = $(`<div id="html_262c99a47a4f003e7f7fb2802bb1468b" style="width: 100.0%; height: 100.0%;"><b>Panyileukan</b><br>Rumah Sakit: 1<br>Klinik: 5<br>Sekolah: 18<br>Fasum Density: 7.801</div>`)[0];
+                popup_b4bb180fb3150ce63752579c24e68edd.setContent(html_262c99a47a4f003e7f7fb2802bb1468b);
+            
+        
+
+        circle_marker_05b014bb392a308e35eecc7e84cd0de6.bindPopup(popup_b4bb180fb3150ce63752579c24e68edd)
+        ;
+
+        
+    
+    
+            var circle_marker_08b5a426e29f9a9f4d96d78e18743f37 = L.circleMarker(
+                [-6.892124414532701, 107.57177578990981],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_81eabe7bdaa5fd737ccb19784a262c4c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_09990057b92a6daf6ac410deae98025e = $(`<div id="html_09990057b92a6daf6ac410deae98025e" style="width: 100.0%; height: 100.0%;"><b>Rancasari</b><br>Rumah Sakit: 1<br>Klinik: 12<br>Sekolah: 7<br>Fasum Density: 6.618</div>`)[0];
+                popup_81eabe7bdaa5fd737ccb19784a262c4c.setContent(html_09990057b92a6daf6ac410deae98025e);
+            
+        
+
+        circle_marker_08b5a426e29f9a9f4d96d78e18743f37.bindPopup(popup_81eabe7bdaa5fd737ccb19784a262c4c)
+        ;
+
+        
+    
+    
+            var circle_marker_8ebf48de20b03116f131ae5737736672 = L.circleMarker(
+                [-6.886182883400955, 107.6596375094237],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_a2af27f8f108ca994dcffec1c4bfac8f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_054bce30f5768ef346a4137db5dc6ab5 = $(`<div id="html_054bce30f5768ef346a4137db5dc6ab5" style="width: 100.0%; height: 100.0%;"><b>Regol</b><br>Rumah Sakit: 4<br>Klinik: 5<br>Sekolah: 27<br>Fasum Density: 6.484</div>`)[0];
+                popup_a2af27f8f108ca994dcffec1c4bfac8f.setContent(html_054bce30f5768ef346a4137db5dc6ab5);
+            
+        
+
+        circle_marker_8ebf48de20b03116f131ae5737736672.bindPopup(popup_a2af27f8f108ca994dcffec1c4bfac8f)
+        ;
+
+        
+    
+    
+            var circle_marker_07b15816ab8844c740fd377e6c94a039 = L.circleMarker(
+                [-6.900773325833903, 107.57041522652051],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_33b0b8e41e6dd4c49ad5e03f34113198 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b9a64fd142bd0c3745ffdd1f21c1f72a = $(`<div id="html_b9a64fd142bd0c3745ffdd1f21c1f72a" style="width: 100.0%; height: 100.0%;"><b>Sukajadi</b><br>Rumah Sakit: 0<br>Klinik: 9<br>Sekolah: 9<br>Fasum Density: 3.734</div>`)[0];
+                popup_33b0b8e41e6dd4c49ad5e03f34113198.setContent(html_b9a64fd142bd0c3745ffdd1f21c1f72a);
+            
+        
+
+        circle_marker_07b15816ab8844c740fd377e6c94a039.bindPopup(popup_33b0b8e41e6dd4c49ad5e03f34113198)
+        ;
+
+        
+    
+    
+            var circle_marker_a7df768c92ecdc070af8eb33cf4b1349 = L.circleMarker(
+                [-6.9296775462487465, 107.59694319684856],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_0e28cc9ef561d116b78cd1d7bb7f68d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1568d40e56aca029ab90e33bccd9ba10 = $(`<div id="html_1568d40e56aca029ab90e33bccd9ba10" style="width: 100.0%; height: 100.0%;"><b>Sukasari</b><br>Rumah Sakit: 1<br>Klinik: 12<br>Sekolah: 13<br>Fasum Density: 5.792</div>`)[0];
+                popup_0e28cc9ef561d116b78cd1d7bb7f68d4.setContent(html_1568d40e56aca029ab90e33bccd9ba10);
+            
+        
+
+        circle_marker_a7df768c92ecdc070af8eb33cf4b1349.bindPopup(popup_0e28cc9ef561d116b78cd1d7bb7f68d4)
+        ;
+
+        
+    
+    
+            var circle_marker_43ee19f89a86c5bd832247ef03b45d11 = L.circleMarker(
+                [-6.9534038299688685, 107.60481204842418],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_4023f573c7b09839b0ca984b0af51452 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3ba3e176a4888947c2ec940630459353 = $(`<div id="html_3ba3e176a4888947c2ec940630459353" style="width: 100.0%; height: 100.0%;"><b>Sumur Bandung</b><br>Rumah Sakit: 4<br>Klinik: 9<br>Sekolah: 18<br>Fasum Density: 7.746</div>`)[0];
+                popup_4023f573c7b09839b0ca984b0af51452.setContent(html_3ba3e176a4888947c2ec940630459353);
+            
+        
+
+        circle_marker_43ee19f89a86c5bd832247ef03b45d11.bindPopup(popup_4023f573c7b09839b0ca984b0af51452)
+        ;
+
+        
+    
+    
+            var circle_marker_07c5479b2f2375d1da43e94fa5d73d48 = L.circleMarker(
+                [-6.908414833694052, 107.59033273191719],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13, "stroke": true, "weight": 3}
+            ).addTo(feature_group_57a02d42191143598c12deba6b6ddd17);
+        
+    
+        var popup_0a8c605f411d7b5123f2ebcee545f43a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_20760d64f28cb2bfe37e2261a0f02603 = $(`<div id="html_20760d64f28cb2bfe37e2261a0f02603" style="width: 100.0%; height: 100.0%;"><b>Ujung Berung</b><br>Rumah Sakit: 4<br>Klinik: 11<br>Sekolah: 12<br>Fasum Density: 4.36</div>`)[0];
+                popup_0a8c605f411d7b5123f2ebcee545f43a.setContent(html_20760d64f28cb2bfe37e2261a0f02603);
+            
+        
+
+        circle_marker_07c5479b2f2375d1da43e94fa5d73d48.bindPopup(popup_0a8c605f411d7b5123f2ebcee545f43a)
+        ;
+
+        
+    
+    
+            feature_group_57a02d42191143598c12deba6b6ddd17.addTo(map_fd48dc79befacf4abd69e1044a16896f);
+        
+    
+            var feature_group_5b00d86bb527cfefdc35a2644f0cdf43 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var heat_map_8e85fa96f89386ecfd969e4a666f6a93 = L.heatLayer(
+                [[-6.960262286190166, 107.55387291802153, 1.985], [-6.953234195739722, 107.55266766705076, 1.985], [-6.957656657173843, 107.5561284775344, 1.985], [-6.954775316252507, 107.56404101492062, 1.985], [-6.948740823693226, 107.5626832147306, 1.985], [-6.947418586507385, 107.56788734805957, 1.985], [-6.953207424747827, 107.5561963722481, 1.985], [-6.955546292381125, 107.5553038369919, 1.985], [-6.915476916904957, 107.562036026915, 1.0676], [-6.919321838741224, 107.55563010588871, 1.0676], [-6.929192599659478, 107.5580148597133, 1.0676], [-6.92724644371292, 107.5605567886798, 1.0676], [-6.926997363632436, 107.56187232553042, 1.0676], [-6.9246225242019035, 107.55666196154432, 1.0676], [-6.930346500872411, 107.56060501134345, 1.0676], [-6.929927618791787, 107.56185523321464, 1.0676], [-6.886755121547981, 107.55515125622998, 4.5], [-6.885716357100907, 107.55768573456746, 4.5], [-6.880424784711, 107.56234401073048, 4.5], [-6.882691460668843, 107.55413861177878, 4.5], [-6.874879061924519, 107.55193572858064, 4.5], [-6.881318228653707, 107.55680448692792, 4.5], [-6.871377123748093, 107.56072052214223, 4.5], [-6.88018749587415, 107.55806192644991, 4.5], [-6.9088769851706, 107.5878174777299, 2.8366000000000002], [-6.915982401396971, 107.58311774747143, 2.8366000000000002], [-6.905679273406796, 107.58277827123571, 2.8366000000000002], [-6.911442678400844, 107.59046430586126, 2.8366000000000002], [-6.9174035886583605, 107.5923586312924, 2.8366000000000002], [-6.905088645299764, 107.59428185133835, 2.8366000000000002], [-6.91351366813105, 107.58388724316251, 2.8366000000000002], [-6.904142943337468, 107.59013737960763, 2.8366000000000002], [-6.881238322292716, 107.57399591393498, 3.4532], [-6.885132265690073, 107.56215237984112, 3.4532], [-6.889135951638616, 107.57185464179916, 3.4532], [-6.88571956932644, 107.57509672293084, 3.4532], [-6.8794695721552275, 107.57684651395368, 3.4532], [-6.880610854626525, 107.56602038007283, 3.4532], [-6.878654457769838, 107.56161161615509, 3.4532], [-6.882966751948977, 107.57510180229303, 3.4532], [-6.9294149946168675, 107.58425351132229, 1.403], [-6.9296485406893265, 107.59078289121258, 1.403], [-6.931746492087208, 107.59635050431882, 1.403], [-6.932209207251875, 107.58640358956963, 1.403], [-6.929549677071137, 107.5853079201757, 1.403], [-6.932497585231666, 107.58842629025051, 1.403], [-6.922638301041013, 107.58334135636315, 1.403], [-6.934496982957656, 107.5852475568677, 1.403], [-6.9300110580548875, 107.55645340565579, 4.5217], [-6.942828685559095, 107.55123445827068, 4.5217], [-6.94457369780286, 107.54727291767335, 4.5217], [-6.940476990345028, 107.55080337839458, 4.5217], [-6.931065309129744, 107.55514477732535, 4.5217], [-6.937388363652624, 107.55477774729682, 4.5217], [-6.9381919536693655, 107.55388943167837, 4.5217], [-6.933504027193848, 107.54631009423828, 4.5217], [-6.915410745882433, 107.56176072674477, 2.0726], [-6.920957259259587, 107.55884663301757, 2.0726], [-6.925148781679061, 107.56053374082025, 2.0726], [-6.9267174789206765, 107.56267014403292, 2.0726], [-6.914362886575434, 107.56516203644168, 2.0726], [-6.918988654023792, 107.56042521070637, 2.0726], [-6.917602663807743, 107.55447068110477, 2.0726], [-6.927896212656846, 107.56629997313625, 2.0726], [-6.908426590999167, 107.56108839206757, 1.4062999999999999], [-6.9074838614833975, 107.5561239642818, 1.4062999999999999], [-6.901891472718356, 107.5558737678958, 1.4062999999999999], [-6.9021566248456905, 107.56351288539726, 1.4062999999999999], [-6.911325231342751, 107.56602092246479, 1.4062999999999999], [-6.913216973159838, 107.5570208730608, 1.4062999999999999], [-6.906208451433247, 107.56365495913909, 1.4062999999999999], [-6.911417989345753, 107.55932972287248, 1.4062999999999999], [-6.93371241731204, 107.61054553050532, 2.2706], [-6.937651463714131, 107.60004526207068, 2.2706], [-6.926491850975374, 107.60095434919837, 2.2706], [-6.924501155525648, 107.5966242676796, 2.2706], [-6.933394001881333, 107.59751805946003, 2.2706], [-6.930432207210861, 107.61120859825273, 2.2706], [-6.934413570212079, 107.60614797839054, 2.2706], [-6.935354063247613, 107.60282615158893, 2.2706], [-6.877369783599267, 107.5571063603106, 6.8537], [-6.8754666289743955, 107.56114768035155, 6.8537], [-6.872026710162175, 107.5575320877243, 6.8537], [-6.87123644720964, 107.55604704071604, 6.8537], [-6.886195525714757, 107.56369502192736, 6.8537], [-6.874773920997529, 107.56076889545186, 6.8537], [-6.885829960171321, 107.56910189503974, 6.8537], [-6.884249293169653, 107.56705922345797, 6.8537], [-6.940939722132456, 107.64034233342376, 4.0], [-6.941381219924414, 107.64422312245412, 4.0], [-6.9408109237707425, 107.65100899587881, 4.0], [-6.942815485071472, 107.64142798519197, 4.0], [-6.945922566966884, 107.65250963822764, 4.0], [-6.950074270344973, 107.64299263531292, 4.0], [-6.944196415263668, 107.63781079163206, 4.0], [-6.951150453001827, 107.63949694732368, 4.0], [-6.9594318549038166, 107.6581376893846, 1.4035], [-6.95637582550593, 107.659287020791, 1.4035], [-6.963452449638889, 107.65208400291195, 1.4035], [-6.957692407094561, 107.66355977272588, 1.4035], [-6.95125845984547, 107.66477227895544, 1.4035], [-6.961244717402312, 107.66518883766008, 1.4035], [-6.958610497550307, 107.65585721823663, 1.4035], [-6.9646142226166, 107.65842146442445, 1.4035], [-6.9076738905322435, 107.57830739454353, 1.068], [-6.9132684910948985, 107.58889285212062, 1.068], [-6.915308873585679, 107.58886888073826, 1.068], [-6.909890664967243, 107.58650288927177, 1.068], [-6.914618103505034, 107.58295872687725, 1.068], [-6.904206132699635, 107.58081479227984, 1.068], [-6.910689812411482, 107.58173010559729, 1.068], [-6.913281913654529, 107.57722468548972, 1.068], [-6.88873362758111, 107.63485627621802, 2.2598], [-6.878034225935953, 107.63543040844105, 2.2598], [-6.877760402100379, 107.63443066784149, 2.2598], [-6.882095196824837, 107.64300621179558, 2.2598], [-6.891925144820648, 107.64931883806405, 2.2598], [-6.880902303848453, 107.64832146884693, 2.2598], [-6.8856239905917045, 107.63891750040237, 2.2598], [-6.889619764788644, 107.63605888158926, 2.2598], [-6.92635320814521, 107.65132833963001, 1.9586000000000001], [-6.933696228003515, 107.63859505163084, 1.9586000000000001], [-6.931303880754653, 107.64062558574534, 1.9586000000000001], [-6.933489462125459, 107.64173238594923, 1.9586000000000001], [-6.926489663171238, 107.64513324231064, 1.9586000000000001], [-6.928120638266402, 107.64442098011962, 1.9586000000000001], [-6.921349672366556, 107.64613052499183, 1.9586000000000001], [-6.936406892064669, 107.64040715343927, 1.9586000000000001], [-6.93768284397243, 107.62967034189673, 0.9864], [-6.947366716862719, 107.62242997338977, 0.9864], [-6.935587963792975, 107.62389710651699, 0.9864], [-6.949103616557754, 107.62340225930735, 0.9864], [-6.94476227233023, 107.61848227830903, 0.9864], [-6.934396494994534, 107.61675993428221, 0.9864], [-6.936107169895786, 107.627116459058, 0.9864], [-6.939897206838835, 107.62026613092743, 0.9864], [-6.919238926743556, 107.64982054542425, 2.5866000000000002], [-6.905215642355518, 107.64199736942328, 2.5866000000000002], [-6.918544902765344, 107.64672324953614, 2.5866000000000002], [-6.906941538656968, 107.63920566771827, 2.5866000000000002], [-6.9079419151281, 107.64050152874414, 2.5866000000000002], [-6.920046596702899, 107.64146316992323, 2.5866000000000002], [-6.913241553442802, 107.65411198352636, 2.5866000000000002], [-6.909982364197761, 107.64007463047035, 2.5866000000000002], [-6.937199156858329, 107.59716993163738, 2.6726], [-6.9381817186826575, 107.60048217192153, 2.6726], [-6.9338833896505765, 107.60508580899346, 2.6726], [-6.926511107769379, 107.60285909383728, 2.6726], [-6.935864187734681, 107.59668939179642, 2.6726], [-6.928880940173436, 107.5912190272656, 2.6726], [-6.939473652796475, 107.59502668915584, 2.6726], [-6.933214931080802, 107.60237885539841, 2.6726], [-6.885730446747482, 107.60445753822422, 1.2293], [-6.897731234714991, 107.6183266980061, 1.2293], [-6.894155794293392, 107.60553208670798, 1.2293], [-6.88608290248985, 107.6160900643042, 1.2293], [-6.889089784454789, 107.61580898677096, 1.2293], [-6.885011317802974, 107.61718042395127, 1.2293], [-6.8945526806800626, 107.61026420858316, 1.2293], [-6.883013759724522, 107.6094141739164, 1.2293], [-6.896347232278058, 107.63214644198302, 1.7053], [-6.892335679717375, 107.62824485209737, 1.7053], [-6.90076696554212, 107.62964610300244, 1.7053], [-6.906312065696163, 107.6242110697603, 1.7053], [-6.894223024558178, 107.62894805637212, 1.7053], [-6.905086491491473, 107.63011630095924, 1.7053], [-6.896604499253057, 107.625717882971, 1.7053], [-6.9046907589271544, 107.62814366900088, 1.7053], [-6.8960715910328165, 107.65199143578415, 2.0587], [-6.897842324372086, 107.64994156419552, 2.0587], [-6.904715332618041, 107.6545441031669, 2.0587], [-6.89555248369739, 107.65334462170658, 2.0587], [-6.893755755673865, 107.66454139522267, 2.0587], [-6.905387122065707, 107.6492392656817, 2.0587], [-6.896341282083219, 107.66104178865731, 2.0587], [-6.893586057307634, 107.65957128380688, 2.0587], [-6.91176612131344, 107.62806474820736, 4.0849], [-6.922634704522513, 107.63821504007109, 4.0849], [-6.914572625216267, 107.62654363206238, 4.0849], [-6.909963508207475, 107.62339390069334, 4.0849], [-6.92333922119819, 107.62629404372065, 4.0849], [-6.922166258850038, 107.62878838947285, 4.0849], [-6.91431046537299, 107.63052713882192, 4.0849], [-6.915388251865803, 107.62412647483498, 4.0849], [-6.925734097928992, 107.56142353555816, 2.3924000000000003], [-6.929016423653839, 107.5586089155264, 2.3924000000000003], [-6.924085277201466, 107.55801390860533, 2.3924000000000003], [-6.923765893527563, 107.55285308156155, 2.3924000000000003], [-6.930533420190278, 107.54731806107687, 2.3924000000000003], [-6.9324811282469705, 107.54743577620833, 2.3924000000000003], [-6.922015454106323, 107.55921796980421, 2.3924000000000003], [-6.9212111834231065, 107.55997771140933, 2.3924000000000003], [-6.8943841182948775, 107.57456119997788, 4.098], [-6.886999935250274, 107.56589265773668, 4.098], [-6.900118840137598, 107.56713028343722, 4.098], [-6.885472192971714, 107.57669855068457, 4.098], [-6.898050137036013, 107.577330574933, 4.098], [-6.897329986716295, 107.56804270015539, 4.098], [-6.897434046026103, 107.57791882441448, 4.098], [-6.886875333123059, 107.56481448642224, 4.098], [-6.893801645521915, 107.66429724874743, 3.3487], [-6.887883864628577, 107.66073227402035, 3.3487], [-6.883973126946159, 107.66033506671978, 3.3487], [-6.891174957070981, 107.6566028289751, 3.3487], [-6.884623740626921, 107.66418609050675, 3.3487], [-6.888771393915087, 107.6520000830075, 3.3487], [-6.891858619195485, 107.65619566947603, 3.3487], [-6.878804108853382, 107.65846912334725, 3.3487], [-6.9008134218730826, 107.5691787797901, 3.4232], [-6.894915702399937, 107.57522538786925, 3.4232], [-6.906310008300153, 107.57307239765633, 3.4232], [-6.899975251085103, 107.57677544883978, 3.4232], [-6.907769630292405, 107.57166787355862, 3.4232], [-6.905736213192482, 107.5715247307098, 3.4232], [-6.895698534061326, 107.56935965922152, 3.4232], [-6.9002165463373615, 107.56825726766424, 3.4232], [-6.922560190087756, 107.60274175808973, 2.1789], [-6.9362424926094155, 107.58962690455536, 2.1789], [-6.929118614906882, 107.59392653850682, 2.1789], [-6.93717778166227, 107.59974651439965, 2.1789], [-6.935178581717884, 107.599244376201, 2.1789], [-6.936099760878613, 107.60036600669386, 2.1789], [-6.924278342064717, 107.60169795267113, 2.1789], [-6.923550309706939, 107.59878743410275, 2.1789], [-6.956063689666459, 107.5997310949028, 4.7418000000000005], [-6.950878189194534, 107.61240022162629, 4.7418000000000005], [-6.95087460990276, 107.59847497105537, 4.7418000000000005], [-6.960707746635854, 107.59924783415364, 4.7418000000000005], [-6.94855752130312, 107.59898706599348, 4.7418000000000005], [-6.950109029846926, 107.60615171887987, 4.7418000000000005], [-6.955567176437066, 107.60354487402597, 4.7418000000000005], [-6.957192729833581, 107.60338763913536, 4.7418000000000005], [-6.9134703759802685, 107.59079896956295, 1.9305], [-6.905841748156315, 107.59112861749101, 1.9305], [-6.900553597019878, 107.59713335068521, 1.9305], [-6.902170337517768, 107.5919952477612, 1.9305], [-6.9141104192405765, 107.594474997785, 1.9305], [-6.901318250129311, 107.59194268008751, 1.9305], [-6.9091500927608305, 107.59281667075976, 1.9305], [-6.906384097390896, 107.59557557608767, 1.9305]],
+                {
+  "minOpacity": 0.3,
+  "maxZoom": 18,
+  "radius": 22,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_8e85fa96f89386ecfd969e4a666f6a93.addTo(feature_group_5b00d86bb527cfefdc35a2644f0cdf43);
+        
+    
+            feature_group_5b00d86bb527cfefdc35a2644f0cdf43.addTo(map_fd48dc79befacf4abd69e1044a16896f);
+        
+    
+            var layer_control_9e67d912ba872a53c4429a4bec79848e_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_90c09c2a5ae145b25e1eeef02fd73028,
+                },
+                overlays :  {
+                    "Hydrology / Water Density" : feature_group_ca55211a1893f481411b35185620e3d3,
+                    "Critical Facilities" : feature_group_57a02d42191143598c12deba6b6ddd17,
+                    "Flood Risk Vulnerability Heatmap" : feature_group_5b00d86bb527cfefdc35a2644f0cdf43,
+                },
+            };
+            let layer_control_9e67d912ba872a53c4429a4bec79848e = L.control.layers(
+                layer_control_9e67d912ba872a53c4429a4bec79848e_layers.base_layers,
+                layer_control_9e67d912ba872a53c4429a4bec79848e_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_fd48dc79befacf4abd69e1044a16896f);
+
+        
+</script>
+</html>

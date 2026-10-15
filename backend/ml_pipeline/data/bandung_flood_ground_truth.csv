@@ -1,0 +1,31 @@
+districtId,district,flood_events,drainage_failure_events,hydromet_events,landslide_events,building_collapse_events,wind_fire_events,total_disaster_events
+andir,Andir,1,2,3,0,4,1,7
+antapani,Antapani,0,0,0,0,0,1,1
+arcamanik,Arcamanik,2,0,2,1,1,0,4
+astana-anyar,Astana Anyar,3,2,5,0,1,1,6
+babakan-ciparay,Babakan Ciparay,0,0,0,0,1,0,1
+bandung-kidul,Bandung Kidul,3,1,4,0,1,1,6
+bandung-kulon,Bandung Kulon,1,1,2,1,0,0,3
+bandung-wetan,Bandung Wetan,2,0,2,0,0,0,2
+batununggal,Batununggal,1,2,3,0,0,0,3
+bojongloa-kaler,Bojongloa Kaler,2,0,2,0,1,0,3
+bojongloa-kidul,Bojongloa Kidul,0,0,0,0,1,0,1
+buah-batu,Buah Batu,1,1,2,0,0,0,2
+cibeunying-kaler,Cibeunying Kaler,0,1,1,1,1,0,3
+cibeunying-kidul,Cibeunying Kidul,0,1,1,0,0,1,2
+cibiru,Cibiru,0,0,0,3,1,2,6
+cicendo,Cicendo,2,2,4,0,5,0,9
+cidadap,Cidadap,2,2,4,10,4,3,20
+cinambo,Cinambo,1,0,1,0,0,3,4
+coblong,Coblong,0,8,8,6,3,1,18
+gedebage,Gedebage,7,1,8,0,0,0,8
+kiaracondong,Kiaracondong,0,1,1,0,4,2,7
+lengkong,Lengkong,0,1,1,0,1,1,3
+mandalajati,Mandalajati,0,1,1,1,1,2,5
+panyileukan,Panyileukan,2,1,3,0,0,1,4
+rancasari,Rancasari,8,0,8,0,1,0,9
+regol,Regol,0,1,1,0,2,0,3
+sukajadi,Sukajadi,3,0,3,0,2,1,6
+sukasari,Sukasari,0,1,1,1,1,0,3
+sumur-bandung,Sumur Bandung,3,1,4,0,0,0,3
+ujung-berung,Ujung Berung,2,1,3,0,2,3,8

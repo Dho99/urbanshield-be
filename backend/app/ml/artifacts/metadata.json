@@ -1,0 +1,204 @@
+{
+  "model_type": "XGBoostRegressor",
+  "version": "1.1.0",
+  "training_data": "training_dataset.csv",
+  "feature_columns": [
+    "rainfall_mm",
+    "elevation_mean",
+    "slope_mean",
+    "population_density",
+    "drainage_density_km",
+    "river_density_km",
+    "road_density",
+    "building_density",
+    "green_ratio",
+    "water_ratio",
+    "facility_density",
+    "impervious_ratio",
+    "basin_depression_index",
+    "effective_drainage_capacity"
+  ],
+  "feature_metadata": {
+    "rainfall_mm": {
+      "display_name": "Rainfall intensity",
+      "unit": "mm / 24h",
+      "category": "hazard",
+      "direction": "positive"
+    },
+    "drainage_density_km": {
+      "display_name": "Drainage density",
+      "unit": "km / km\u00b2",
+      "category": "capacity",
+      "direction": "negative"
+    },
+    "elevation_mean": {
+      "display_name": "Elevation",
+      "unit": "m",
+      "category": "hazard",
+      "direction": "negative"
+    },
+    "population_density": {
+      "display_name": "Population density",
+      "unit": "k / km\u00b2",
+      "category": "vulnerability",
+      "direction": "positive"
+    },
+    "impervious_ratio": {
+      "display_name": "Impervious surface ratio",
+      "unit": "%",
+      "category": "vulnerability",
+      "direction": "positive"
+    },
+    "basin_depression_index": {
+      "display_name": "Basin depression level",
+      "unit": "index",
+      "category": "hazard",
+      "direction": "positive"
+    },
+    "river_density_km": {
+      "display_name": "River network density",
+      "unit": "km / km\u00b2",
+      "category": "hazard",
+      "direction": "positive"
+    },
+    "green_ratio": {
+      "display_name": "Green infiltration area",
+      "unit": "%",
+      "category": "capacity",
+      "direction": "negative"
+    },
+    "slope_mean": {
+      "display_name": "Terrain slope",
+      "unit": "\u00b0",
+      "category": "hazard",
+      "direction": "negative"
+    },
+    "effective_drainage_capacity": {
+      "display_name": "Effective drainage capacity",
+      "unit": "km / km\u00b2",
+      "category": "capacity",
+      "direction": "negative"
+    },
+    "building_density": {
+      "display_name": "Building density",
+      "unit": "unit / km\u00b2",
+      "category": "vulnerability",
+      "direction": "positive"
+    },
+    "road_density": {
+      "display_name": "Road network density",
+      "unit": "km / km\u00b2",
+      "category": "vulnerability",
+      "direction": "positive"
+    },
+    "facility_density": {
+      "display_name": "Critical facility density",
+      "unit": "unit / km\u00b2",
+      "category": "vulnerability",
+      "direction": "positive"
+    },
+    "water_ratio": {
+      "display_name": "Surface water ratio",
+      "unit": "%",
+      "category": "hazard",
+      "direction": "positive"
+    }
+  },
+  "evaluation_metrics": {
+    "cv_mae": 3.26,
+    "cv_rmse": 4.2,
+    "cv_r2": 0.834,
+    "cv_tier_accuracy_pct": 91.7,
+    "group_cv_mae": 6.57,
+    "group_cv_rmse": 8.07,
+    "group_cv_r2": 0.227,
+    "group_cv_tier_accuracy_pct": 80.0,
+    "empirical_pearson_r_flood": 0.5455,
+    "empirical_pearson_p_flood": 0.001822,
+    "empirical_spearman_rho_flood": 0.4427,
+    "empirical_spearman_p_flood": 0.014282,
+    "empirical_pearson_r_hydromet": 0.3083,
+    "empirical_spearman_rho_hydromet": 0.2572,
+    "macro_f1": 0.979,
+    "baseline_mae": 8.83,
+    "baseline_tier_accuracy_pct": 72.5,
+    "mae_improvement_over_baseline_pct": 63.1
+  },
+  "top_features": [
+    {
+      "feature": "rainfall_mm",
+      "display_name": "Rainfall intensity",
+      "importance_mean_abs_shap": 4.488
+    },
+    {
+      "feature": "elevation_mean",
+      "display_name": "Elevation",
+      "importance_mean_abs_shap": 3.868
+    },
+    {
+      "feature": "effective_drainage_capacity",
+      "display_name": "Effective drainage capacity",
+      "importance_mean_abs_shap": 1.996
+    },
+    {
+      "feature": "river_density_km",
+      "display_name": "River network density",
+      "importance_mean_abs_shap": 1.275
+    },
+    {
+      "feature": "slope_mean",
+      "display_name": "Terrain slope",
+      "importance_mean_abs_shap": 0.802
+    },
+    {
+      "feature": "water_ratio",
+      "display_name": "Surface water ratio",
+      "importance_mean_abs_shap": 0.718
+    },
+    {
+      "feature": "building_density",
+      "display_name": "Building density",
+      "importance_mean_abs_shap": 0.674
+    },
+    {
+      "feature": "population_density",
+      "display_name": "Population density",
+      "importance_mean_abs_shap": 0.59
+    },
+    {
+      "feature": "basin_depression_index",
+      "display_name": "Basin depression level",
+      "importance_mean_abs_shap": 0.549
+    },
+    {
+      "feature": "facility_density",
+      "display_name": "Critical facility density",
+      "importance_mean_abs_shap": 0.543
+    },
+    {
+      "feature": "drainage_density_km",
+      "display_name": "Drainage density",
+      "importance_mean_abs_shap": 0.508
+    },
+    {
+      "feature": "road_density",
+      "display_name": "Road network density",
+      "importance_mean_abs_shap": 0.296
+    },
+    {
+      "feature": "green_ratio",
+      "display_name": "Green infiltration area",
+      "importance_mean_abs_shap": 0.276
+    },
+    {
+      "feature": "impervious_ratio",
+      "display_name": "Impervious surface ratio",
+      "importance_mean_abs_shap": 0.079
+    }
+  ],
+  "shap_plots": {
+    "summary": "D:\\Farid2\\Project\\urbansense-ai\\backend\\ml_pipeline\\results\\shap_summary.png",
+    "importance_bar": "D:\\Farid2\\Project\\urbansense-ai\\backend\\ml_pipeline\\results\\shap_importance.png",
+    "confusion_matrix": "D:\\Farid2\\Project\\urbansense-ai\\backend\\ml_pipeline\\results\\confusion_matrix.png"
+  }
+}
