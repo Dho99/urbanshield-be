@@ -1,8 +1,13 @@
 ﻿from alembic import context
 from sqlalchemy import pool
 
+from app.core.config import DATABASE_URL
 from app.database.session import Base, engine
 import app.models  # noqa: F401 ensure metadata is populated
+
+# Single source of truth: .env DATABASE_URL (Neon cloud).
+# Overrides hardcoded sqlalchemy.url in alembic.ini (localhost).
+context.config.set_main_option("sqlalchemy.url", DATABASE_URL)
 
 target_metadata = Base.metadata
 

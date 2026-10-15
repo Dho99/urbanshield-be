@@ -2,7 +2,7 @@
 Idempotent PostGIS seeder for UrbanShield AI.
 
 Sources:
-  urban_osm_crawler/output/kecamatan.geojson  (30 districts, Polygon 4326)
+  urban_osm_crawler/output/kecamatan_wgs84.geojson (30 districts, Polygon 4326; fallback kecamatan.geojson UTM legacy)
   urban_osm_crawler/output/urban_osm_features_final.csv  (30 x 26 cols, seed 42)
   app/services/seed.py  (MOCK_DISTRICTS 8, recommendations, scenario logic)
   app/services/dataset_service.py  (7 datasets)
@@ -43,7 +43,11 @@ from app.services.mitigation_engine import build_decision
 from app.services.seed import MOCK_DISTRICTS, MOCK_RECOMMENDATIONS, risk_level
 from app.services.dataset_service import DATASETS
 
-GEOJSON_PATH = BACKEND_DIR / "urban_osm_crawler" / "output" / "kecamatan.geojson"
+# kecamatan.geojson is EPSG:32748 (UTM) — wrong for GEOMETRY 4326.
+# Prefer kecamatan_wgs84.geojson (lon 107.x / lat -6.9), fallback legacy.
+GEOJSON_WGS84 = BACKEND_DIR / "urban_osm_crawler" / "output" / "kecamatan_wgs84.geojson"
+GEOJSON_LEGACY = BACKEND_DIR / "urban_osm_crawler" / "output" / "kecamatan.geojson"
+GEOJSON_PATH = GEOJSON_WGS84 if GEOJSON_WGS84.exists() else GEOJSON_LEGACY
 CSV_PATH = BACKEND_DIR / "urban_osm_crawler" / "output" / "urban_osm_features_final.csv"
 
 SEED_ADMIN_EMAIL = "admin@urbanshield.local"
@@ -154,11 +158,12 @@ def seed_areas_and_boundaries(db: Session, features: list[dict]) -> dict[str, Ar
                 area.osm_id = props.get("osm_id")
         slug_to_area[slug] = area
         geom_json = json.dumps(geom)
+        # area_boundaries.geom is MULTIPOLYGON; source files are Polygon → wrap ST_Multi.
         existing_boundary = db.query(AreaBoundary).filter(AreaBoundary.area_id == area.id).first()
         if existing_boundary:
-            db.execute(text("UPDATE area_boundaries SET geom = ST_GeomFromGeoJSON(:gj) WHERE area_id = :aid"), {"gj": geom_json, "aid": area.id})
+            db.execute(text("UPDATE area_boundaries SET geom = ST_Multi(ST_GeomFromGeoJSON(:gj)) WHERE area_id = :aid"), {"gj": geom_json, "aid": area.id})
         else:
-            db.execute(text("INSERT INTO area_boundaries (area_id, geom) VALUES (:aid, ST_GeomFromGeoJSON(:gj))"), {"aid": area.id, "gj": geom_json})
+            db.execute(text("INSERT INTO area_boundaries (area_id, geom) VALUES (:aid, ST_Multi(ST_GeomFromGeoJSON(:gj)))"), {"aid": area.id, "gj": geom_json})
     db.commit()
     return slug_to_area
 
@@ -258,9 +263,9 @@ def seed_all(reset: bool = False, dry_run: bool = False):
     print(f"[seed] geojson features: {len(features)}  csv rows: {len(csv_rows)}")
     if dry_run:
         mock_slugs = {slugify(d['district']) for d in MOCK_DISTRICTS}
-        geo_slugs = {slugify(f.get('properties', {}).get('name', '')) for f in features}
+        geo_slugs = {slugify(f.get('properties', {}).get('name') or f.get('properties', {}).get('district', '')) for f in features}
         print(f"[seed] dry-run: would seed {len(features)} areas, {len(csv_rows)} osm rows, {len(features)} predictions+recommendations")
-        print(f"[seed] pilot overlap 8 in 30: {len(mock_slugs & geo_slugs)}/8")
+        print(f"[seed] overlap mock&geo: {len(mock_slugs & geo_slugs)}/{len(mock_slugs)} (geo {len(geo_slugs)})")
         print(f"[seed] roles 3, datasets {len(DATASETS)}, users 1 (admin)")
         return
     Base.metadata.create_all(bind=engine)

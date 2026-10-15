@@ -1,3 +1,6 @@
+-- DEPRECATED (legacy crawler staging, 2026-10-15).
+-- Source of truth now: app/models/* (11 tables) + migrations/b4bac8995954_init_sync_11_tables.py.
+-- Do NOT apply to Neon. Kept for reference / crawler output mapping only.
 CREATE EXTENSION IF NOT EXISTS postgis;
 
 CREATE TABLE IF NOT EXISTS administrative_boundary (

@@ -5,8 +5,19 @@ from dotenv import load_dotenv
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 load_dotenv(BASE_DIR / ".env")
 
-DATABASE_URL = os.getenv(
-    "DATABASE_URL", "postgresql+psycopg2://postgres:postgres@localhost:5432/urbanshield")
+def _normalize_db_url(url: str) -> str:
+    # Neon .env uses postgresql:// ; SQLAlchemy needs postgresql+psycopg2://
+    if url.startswith("postgresql://"):
+        return url.replace("postgresql://", "postgresql+psycopg2://", 1)
+    return url
+
+
+DATABASE_URL = _normalize_db_url(
+    os.getenv(
+        "DATABASE_URL",
+        "postgresql+psycopg2://postgres:password@localhost:5432/urbanshield",
+    )
+)
 SECRET_KEY = os.getenv("SECRET_KEY", "dev-secret-change-me")
 JWT_ALGORITHM = os.getenv("JWT_ALGORITHM", "HS256")
 JWT_EXPIRE_MINUTES = int(os.getenv("JWT_EXPIRE_MINUTES", "1440"))
